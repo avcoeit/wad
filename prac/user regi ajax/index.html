@@ -1,0 +1,417 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Registration Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        form {
+            width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h2>User Registration</h2>
+
+    <form id="form">
+
+        <input type="text" id="name" placeholder="Enter Name" required>
+
+        <input type="email" id="email" placeholder="Enter Email" required>
+
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <script>
+
+        document.getElementById("form").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let user = {
+                name: name,
+                email: email,
+                password: password
+            };
+
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+
+            users.push(user);
+
+            localStorage.setItem("users", JSON.stringify(users));
+
+            let xhr = new XMLHttpRequest();
+
+            xhr.open("POST", "https://jsonplaceholder.typicode.com/posts", true);
+
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.send(JSON.stringify(user));
+
+            alert("Registration Successful");
+
+            window.location = "data.html";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!--
+
+==================== index.html EXPLANATION ====================
+
+<!DOCTYPE html>
+
+Tells browser this is HTML5 document.
+
+--------------------------------------------------
+
+<html>
+
+Starting of HTML page.
+
+--------------------------------------------------
+
+<head>
+
+Contains title and CSS.
+
+--------------------------------------------------
+
+<title>Registration Form</title>
+
+Shows page title on browser tab.
+
+--------------------------------------------------
+
+<style>
+
+Used for Internal CSS.
+
+--------------------------------------------------
+
+body{
+    font-family: Arial;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+Meaning:
+
+font-family → Sets text style.
+background → Page background color.
+padding → Space around webpage.
+
+--------------------------------------------------
+
+form{
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+Meaning:
+
+width → Form width.
+background → White form color.
+padding → Space inside form.
+border-radius → Rounded corners.
+
+--------------------------------------------------
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+Meaning:
+
+width:100% → Full width input box.
+padding → Space inside input.
+margin-top → Space between inputs.
+
+--------------------------------------------------
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: blue;
+    color: white;
+    border: none;
+}
+
+Meaning:
+
+background → Button color.
+color → Text color.
+border:none → Removes border.
+
+--------------------------------------------------
+
+<form id="form">
+
+Creates registration form.
+
+--------------------------------------------------
+
+<input type="text">
+
+Used to enter name.
+
+--------------------------------------------------
+
+<input type="email">
+
+Used to enter email.
+
+--------------------------------------------------
+
+<input type="password">
+
+Used to enter password.
+
+--------------------------------------------------
+
+<button type="submit">
+
+Creates submit button.
+
+==================================================
+JAVASCRIPT EXPLANATION
+==================================================
+
+document.getElementById("form")
+
+Selects form using id.
+
+--------------------------------------------------
+
+addEventListener("submit")
+
+Runs function when form is submitted.
+
+--------------------------------------------------
+
+e.preventDefault();
+
+Stops page refresh.
+
+--------------------------------------------------
+
+let name=document.getElementById("name").value;
+
+Gets input value from textbox.
+
+--------------------------------------------------
+
+let user={
+    name:name,
+    email:email,
+    password:password
+};
+
+Creates object for user data.
+
+--------------------------------------------------
+
+JSON.parse(localStorage.getItem("users"))
+
+Gets old data from local storage.
+
+--------------------------------------------------
+
+users.push(user);
+
+Adds new user into array.
+
+--------------------------------------------------
+
+localStorage.setItem("users",JSON.stringify(users));
+
+Stores updated data in local storage.
+
+--------------------------------------------------
+
+let xhr=new XMLHttpRequest();
+
+Creates AJAX request.
+
+--------------------------------------------------
+
+xhr.open("POST","URL",true);
+
+Opens AJAX POST request.
+
+--------------------------------------------------
+
+xhr.setRequestHeader("Content-Type","application/json");
+
+Sets data type as JSON.
+
+--------------------------------------------------
+
+xhr.send(JSON.stringify(user));
+
+Sends user data to server.
+
+--------------------------------------------------
+
+alert("Registration Successful");
+
+Shows success message.
+
+--------------------------------------------------
+
+window.location="data.html";
+
+Moves to next page.
+
+==================================================
+data.html EXPLANATION
+==================================================
+
+<table>
+
+Creates table.
+
+--------------------------------------------------
+
+<th>
+
+Table heading.
+
+--------------------------------------------------
+
+<tbody id="data">
+
+Stores table rows dynamically.
+
+--------------------------------------------------
+
+let users=JSON.parse(localStorage.getItem("users")) || [];
+
+Gets stored users from local storage.
+
+--------------------------------------------------
+
+let output="";
+
+Creates empty string.
+
+--------------------------------------------------
+
+users.forEach(function(user)
+
+Loops through all users.
+
+--------------------------------------------------
+
+output += `
+<tr>
+<td>${user.name}</td>
+<td>${user.email}</td>
+<td>${user.password}</td>
+</tr>
+`;
+
+Creates table rows dynamically.
+
+--------------------------------------------------
+
+document.getElementById("data").innerHTML=output;
+
+Displays data inside table.
+
+==================================================
+IMPORTANT VIVA QUESTIONS
+==================================================
+
+Q1. What is Local Storage?
+
+Answer:
+Used to store data permanently in browser.
+
+--------------------------------------------------
+
+Q2. What is AJAX?
+
+Answer:
+AJAX sends data without refreshing webpage.
+
+--------------------------------------------------
+
+Q3. Which AJAX method is used?
+
+Answer:
+POST method.
+
+--------------------------------------------------
+
+Q4. Why JSON.stringify() is used?
+
+Answer:
+Converts object into string.
+
+--------------------------------------------------
+
+Q5. Why JSON.parse() is used?
+
+Answer:
+Converts string into object.
+
+--------------------------------------------------
+
+Q6. What is XMLHttpRequest?
+
+Answer:
+Used to send AJAX requests.
+
+-->
