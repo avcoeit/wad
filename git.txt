@@ -1,0 +1,257 @@
+--------------------------------------------------
+
+short and read below for detail explanation
+--------------------------------------------------
+
+git config --global user.name "user git username"
+git config --global user.email "your_email@gmail.com"
+
+mkdir CampusWay
+cd CampusWay
+
+git init
+
+echo Hello > index.html
+
+git add .
+git commit -m "First Commit"
+
+git remote add origin https://github.com/Sagar3060/CampusWay.git
+
+git push -u origin master
+
+
+
+================ GITHUB AND GIT COMMANDS STEPS ================
+
+Step 1: Create GitHub Account
+
+1. Open browser
+2. Go to GitHub
+3. Click Sign Up
+4. Enter:
+   - Email
+   - Password
+   - Username
+5. Verify account
+6. GitHub account created
+
+--------------------------------------------------
+
+Step 2: Install Git
+
+Download Git from:
+
+Git Download
+
+Install with default settings.
+
+--------------------------------------------------
+
+Step 3: Configure Git
+
+Open terminal or command prompt and run:
+
+git config --global user.name "Your Name"
+
+git config --global user.email "youremail@gmail.com"
+
+--------------------------------------------------
+
+Step 4: Create New Repository on GitHub
+
+1. Login to GitHub
+2. Click New Repository
+3. Enter repository name
+4. Click Create Repository
+
+Example:
+
+college-dashboard
+
+--------------------------------------------------
+
+Step 5: Open Project Folder
+
+Open terminal inside your project folder.
+
+Example:
+
+cd Desktop/project
+
+--------------------------------------------------
+
+Step 6: Initialize Git
+
+git init
+
+Meaning:
+Creates local git repository.
+
+--------------------------------------------------
+
+Step 7: Add Files
+
+git add .
+
+Meaning:
+Adds all files to staging area.
+
+--------------------------------------------------
+
+Step 8: Commit Files
+
+git commit -m "First Commit"
+
+Meaning:
+Saves project changes.
+
+--------------------------------------------------
+
+Step 9: Connect GitHub Repository
+
+git remote add origin https://github.com/username/repository-name.git
+
+Example:
+
+git remote add origin https://github.com/sagar123/college-dashboard.git
+
+--------------------------------------------------
+
+Step 10: Push Code to GitHub
+
+git push -u origin master
+
+or
+
+git push -u origin main
+
+Meaning:
+Uploads code to GitHub.
+
+
+
+
+
+==================================================
+IMPORTANT GIT COMMANDS
+==================================================
+
+git init
+Meaning:
+Initialize repository
+
+--------------------------------------------------
+
+git add .
+Meaning:
+Add all files
+
+--------------------------------------------------
+
+git commit -m "msg"
+Meaning:
+Save changes
+
+--------------------------------------------------
+
+git status
+Meaning:
+Check file status
+
+--------------------------------------------------
+
+git push
+Meaning:
+Upload code
+
+--------------------------------------------------
+
+git pull
+Meaning:
+Download latest code
+
+--------------------------------------------------
+
+git clone URL
+Meaning:
+Copy repository
+
+==================================================
+EASY VIVA QUESTIONS
+==================================================
+
+Q1. What is Git?
+
+Answer:
+Git is a version control system used to track code changes.
+
+--------------------------------------------------
+
+Q2. What is GitHub?
+
+Answer:
+GitHub is online platform used to store Git repositories.
+
+--------------------------------------------------
+
+Q3. What is Repository?
+
+Answer:
+Repository is storage location for project files.
+
+--------------------------------------------------
+
+Q4. What is Version Control?
+
+Answer:
+Version control tracks changes in files and code.
+
+--------------------------------------------------
+
+Q5. What does git init do?
+
+Answer:
+Creates new local git repository.
+
+--------------------------------------------------
+
+Q6. What does git add . do?
+
+Answer:
+Adds all files to staging area.
+
+--------------------------------------------------
+
+Q7. What does git commit do?
+
+Answer:
+Saves project changes permanently.
+
+--------------------------------------------------
+
+Q8. What does git push do?
+
+Answer:
+Uploads local code to GitHub repository.
+
+--------------------------------------------------
+
+Q9. What is staging area?
+
+Answer:
+Temporary area where files are prepared before commit.
+
+--------------------------------------------------
+
+Q10. Difference between Git and GitHub?
+
+Git:
+Version control tool
+Works locally
+Tracks changes
+
+GitHub:
+Online hosting platform
+Works online
+Stores repositories
