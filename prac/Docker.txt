@@ -33,12 +33,16 @@
 
 when save file remember the where you save it
 
+
+
+
+ C:\Users\sagar\Downloads\index.html ----> index.html file  --->copy your file path
+
+ replace with this in main commond  >>>   C:\Users\sagar\Downloads\index.html
+
+
+>>>>>Main Commond<<<<<
 docker cp C:\Users\sagar\Downloads\index.html doc:/usr/share/nginx/html/index.html
-
-
- C:\Users\sagar\Downloads\index.html ----> index.html file  ---> my file path you can copy your file path and replace with this in above link
-
- docker cp your file path doc:/usr/share/nginx/html/index.html
 
 
 
