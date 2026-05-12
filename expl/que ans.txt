@@ -1,0 +1,325 @@
+===============================
+WAD PRACTICAL VIVA QUESTIONS
+===============================
+
+--------------------------------
+1) Responsive Web Page using HTML, CSS, Bootstrap
+--------------------------------
+
+Q1. What is HTML?
+Answer:
+HTML (HyperText Markup Language) is used to create the structure of web pages.
+
+Q2. What is CSS?
+Answer:
+CSS (Cascading Style Sheets) is used for styling web pages.
+
+Q3. What is Bootstrap?
+Answer:
+Bootstrap is a CSS framework used to create responsive websites.
+
+Q4. What is a responsive website?
+Answer:
+A responsive website adjusts according to screen size.
+
+Q5. What is Bootstrap grid system?
+Answer:
+Bootstrap uses a 12-column grid system.
+
+Q6. Difference between id and class?
+Answer:
+id is unique while class can be used multiple times.
+
+Q7. What is media query?
+Answer:
+Media query is used for responsive design.
+
+--------------------------------
+2) JavaScript User Registration Program
+--------------------------------
+
+Q1. What is JavaScript?
+Answer:
+JavaScript is a scripting language used for web interactivity.
+
+Q2. What is form validation?
+Answer:
+Checking user input before form submission.
+
+Q3. Difference between let, var and const?
+Answer:
+var = old keyword
+let = block scope variable
+const = constant variable
+
+Q4. What is DOM?
+Answer:
+DOM stands for Document Object Model.
+
+Q5. What is an event?
+Answer:
+User action like click, submit, hover etc.
+
+Q6. What is addEventListener()?
+Answer:
+Used to attach events to elements.
+
+Q7. Which methods display output in JavaScript?
+Answer:
+alert(), console.log(), document.write()
+
+--------------------------------
+3) GitHub and Git Commands
+--------------------------------
+
+Q1. What is Git?
+Answer:
+Git is a version control system.
+
+Q2. What is GitHub?
+Answer:
+GitHub is an online platform to store repositories.
+
+Q3. Command to initialize Git repository?
+Answer:
+git init
+
+Q4. Command to check status?
+Answer:
+git status
+
+Q5. Command to add files?
+Answer:
+git add .
+
+Q6. Command to commit changes?
+Answer:
+git commit -m "message"
+
+Q7. Command to push code?
+Answer:
+git push origin main
+
+Q8. What is repository?
+Answer:
+Repository is a storage location for project files.
+
+Q9. Difference between Git and GitHub?
+Answer:
+Git is software while GitHub is online hosting service.
+
+--------------------------------
+4) Docker Container Environment
+--------------------------------
+
+Q1. What is Docker?
+Answer:
+Docker is a platform used to run containers.
+
+Q2. What is container?
+Answer:
+Container is a lightweight environment containing application and dependencies.
+
+Q3. What is Docker image?
+Answer:
+Docker image is a template used to create containers.
+
+Q4. Command to check Docker version?
+Answer:
+docker --version
+
+Q5. Command to list images?
+Answer:
+docker images
+
+Q6. Command to run container?
+Answer:
+docker run hello-world
+
+Q7. Difference between VM and container?
+Answer:
+Containers are lightweight and faster than virtual machines.
+
+--------------------------------
+5) Angular Application
+--------------------------------
+
+Q1. What is Angular?
+Answer:
+Angular is a frontend framework developed by Google.
+
+Q2. Command to create Angular app?
+Answer:
+ng new appname
+
+Q3. Command to run Angular app?
+Answer:
+ng serve
+
+Q4. What is component?
+Answer:
+Component controls part of the UI.
+
+Q5. What is TypeScript?
+Answer:
+TypeScript is a superset of JavaScript.
+
+Q6. What is data binding?
+Answer:
+Connecting TypeScript data with HTML.
+
+Q7. What is interpolation?
+Answer:
+Using {{ }} to display data.
+
+--------------------------------
+6) Node.js Application
+--------------------------------
+
+Q1. What is Node.js?
+Answer:
+Node.js is a JavaScript runtime environment.
+
+Q2. Why use Node.js?
+Answer:
+Because it is fast and supports asynchronous programming.
+
+Q3. Command to initialize Node project?
+Answer:
+npm init
+
+Q4. What is npm?
+Answer:
+npm is Node Package Manager.
+
+Q5. What is package.json?
+Answer:
+It stores project details and dependencies.
+
+Q6. Command to install Express?
+Answer:
+npm install express
+
+--------------------------------
+7) APIs using Node.js, ExpressJS and MongoDB
+--------------------------------
+
+Q1. What is API?
+Answer:
+API allows communication between applications.
+
+Q2. What is ExpressJS?
+Answer:
+ExpressJS is a Node.js framework.
+
+Q3. What is MongoDB?
+Answer:
+MongoDB is a NoSQL database.
+
+Q4. What are CRUD operations?
+Answer:
+Create, Read, Update, Delete.
+
+Q5. HTTP methods for CRUD?
+Answer:
+POST = Create
+GET = Read
+PUT = Update
+DELETE = Delete
+
+Q6. What is REST API?
+Answer:
+REST API uses HTTP methods for communication.
+
+Q7. Default MongoDB port?
+Answer:
+27017
+
+Q8. What is JSON?
+Answer:
+JavaScript Object Notation used for data exchange.
+
+--------------------------------
+8) Mobile Website using jQuery Mobile
+--------------------------------
+
+Q1. What is jQuery?
+Answer:
+jQuery is a JavaScript library.
+
+Q2. What is jQuery Mobile?
+Answer:
+Framework for mobile-friendly websites.
+
+Q3. Why use jQuery Mobile?
+Answer:
+To create responsive mobile UI easily.
+
+Q4. What is CDN?
+Answer:
+Content Delivery Network.
+
+Q5. Which attribute creates page in jQuery Mobile?
+Answer:
+data-role="page"
+
+--------------------------------
+9) AWS Deployment / Hosting
+--------------------------------
+
+Q1. What is AWS?
+Answer:
+AWS is a cloud computing platform.
+
+Q2. What is Elastic Beanstalk?
+Answer:
+AWS service used for application deployment.
+
+Q3. What is VPC?
+Answer:
+VPC stands for Virtual Private Cloud.
+
+Q4. What is cloud computing?
+Answer:
+Using services over internet.
+
+Q5. What is deployment?
+Answer:
+Uploading application to server.
+
+Q6. Advantages of AWS?
+Answer:
+Secure, scalable and reliable.
+
+--------------------------------
+Important Quick Questions
+--------------------------------
+
+Q1. Difference between frontend and backend?
+Answer:
+Frontend = User interface
+Backend = Server and database logic
+
+Q2. What is database?
+Answer:
+Database is organized collection of data.
+
+Q3. What is localhost?
+Answer:
+Local server address 127.0.0.1
+
+Q4. What is HTTP?
+Answer:
+Protocol used for web communication.
+
+Q5. Difference between GET and POST?
+Answer:
+GET fetches data while POST sends data.
+
+Q6. Full form of CRUD?
+Answer:
+Create, Read, Update, Delete
+
+Q7. What is full stack development?
+Answer:
+Working on frontend, backend and database together.
